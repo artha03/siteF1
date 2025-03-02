@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="style_ecurie.css">
+</head>
+<header>
+
+    <!-- Logo -->
+    <div class="logo">Mon Logo</div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <button>Menu</button>
+        <div class="menu-content">
+            <a href="index.html">Accueil</a>
+            <a href="page_calendrier.html">Calendrier</a>
+            <a href="page_classement_ecuries.html">Classement écuries</a>
+            <a href="page_classement_pilotes.html">Classement pilotes</a>
+        </div>
+    </div>
+
+    <!-- Bouton retour arriere -->
+    <button id="backButton" class="back-button">←</button>
+
+</header>
+<body>
+
+<!-- Container principale -->
+<div class="ecurie-container">
+
+    <!-- Logo -->
+    <div class="ecurie-header">
+        <img id="ecurie-logo" class="ecurie-logo" src="" alt="Logo de l'écurie">
+        <h1 id="ecurie-nom"></h1>
+        <p id="ecurie-points"></p>
+    </div>
+
+    <!-- Pilotes -->
+    <div class="pilotes">
+        <div id="pilote1-container" class="pilote-container"></div>
+        <div id="pilote2-container" class="pilote-container"></div>
+    </div>
+
+    <!-- Voiture -->
+    <div class="voiture-container">
+        <img id="voiture-photo" class="voiture-photo" src="" alt="Voiture de l'écurie">
+        <h1 id="nom-voiture"></h1>
+        <h3 id="motoriste"></h3>
+    </div>
+
+    <!-- Statistiques -->
+    <div class="statistiques">
+        <div class="stat-card">
+            <span class="stat-title">Titres</span>
+            <p id="nb-championnats"></p>
+        </div>
+        <div class="stat-card">
+            <span class="stat-title">Victoires</span>
+            <p id="nb-victoires"></p>
+        </div>
+        <div class="stat-card">
+            <span class="stat-title">Pole positions</span>
+            <p id="nb-poles"></p>
+        </div>
+        <div class="stat-card">
+            <span class="stat-title">Meilleurs tours</span>
+            <p id="nb-tours-rapides"></p>
+        </div>
+    </div>
+</div>
+
+
+<script src="script_ecurie.js"></script>
+
+</body>
+</html>

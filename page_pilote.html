@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="style_pilote.css">
+</head>
+<header>
+
+    <!-- Logo -->
+    <div class="logo">Mon Logo</div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <button>Menu</button>
+        <div class="menu-content">
+            <a href="index.html">Accueil</a>
+            <a href="page_calendrier.html">Calendrier</a>
+            <a href="page_classement_ecuries.html">Classement écuries</a>
+            <a href="page_classement_pilotes.html">Classement pilotes</a>
+        </div>
+    </div>
+
+    <!-- Bouton retour arriere -->
+    <button id="backButton" class="back-button">←</button>
+
+</header>
+<body>
+
+<!-- Container Principal -->
+<div class="container">
+
+    <!-- Container Premiere infos -->
+    <div class="top-section">
+        <img id="pilote-photo" class="pilote-photo" src="" alt="">
+        <div class="pilote-info">
+            <h1 id="pilote-nom"></h1>
+            <div class="extra-info">
+                <img id="pilote-nationalite" class="nationalite-img" src="" alt="Nationalité">
+                <div id="pilote-ecurie" class="ecurie"></div>
+            </div>
+        </div>
+        <div id="pilote-numero" class="numero"></div>
+    </div>
+
+    <!-- Container infos secondaires -->
+    <div class="bottom-section">
+        <p><strong>Points :</strong> <span id="pilote-points"></span></p>
+        <p><strong>Date de naissance :</strong> <span id="pilote-naissance"></span></p>
+        <p><strong>Grands Prix disputés :</strong> <span id="pilote-gp"></span></p>
+        <p><strong>Podiums :</strong> <span id="pilote-podiums"></span></p>
+        <p><strong>Meilleure place en course :</strong> <span id="pilote-victoires"></span></p>
+        <p><strong>Meilleure place en qualifications :</strong> <span id="pilote-grille"></span></p>
+        <p><strong>Championnats remportés :</strong> <span id="pilote-championnats"></span></p>
+    </div>
+</div>
+
+<script src="script_pilote.js"></script>
+
+</body>
+</html>

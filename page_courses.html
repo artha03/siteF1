@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <link rel="stylesheet" href="style_course.css">
+</head>
+<header>
+
+    <!-- Bouton retour arriere -->
+    <button id="backButton" class="back-button">←</button>
+
+    <!-- Logo -->
+    <div class="logo">Mon Logo</div>
+
+    <!-- Menu -->
+    <div class="menu">
+        <button>Menu</button>
+        <div class="menu-content">
+            <a href="index.html">Accueil</a>
+            <a href="page_calendrier.html">Calendrier</a>
+            <a href="page_classement_ecuries.html">Classement écuries</a>
+            <a href="page_classement_pilotes.html">Classement pilotes</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</header>
+
+
+<body>
+
+<!-- Container Principal -->
+<div class="detail-container">
+    <h1 id="nom"></h1>
+    <img id="photo" src="" alt="">
+
+    <!-- Container affichage horraire dernier moment -->
+    <div id="race-time-container">
+        <p id="race-time"></p>
+    </div>
+
+    <!-- Tableau -->
+    <table id="scheduleTable"></table>
+</div>
+
+<!-- Panneaux deployables -->
+<div class="accordion">
+
+    <!-- Panneau info circuit -->
+    <div class="accordion-item">
+        <button class="accordion-header">Informations sur le circuit</button>
+        <div class="accordion-content" id="circuit-info">
+        </div>
+    </div>
+
+    <!-- Panneau qualifs -->
+    <div class="accordion-item">
+        <button class="accordion-header">Qualifications</button>
+        <div class="accordion-content-grid" id="grid-container-qualifications">
+        </div>
+    </div>
+
+    <!-- Panneau course -->
+    <div class="accordion-item">
+        <button class="accordion-header">Résultat de la course</button>
+        <div class="accordion-content-grid" id="grid-container-course">
+        </div>
+    </div>
+</div>
+
+<script src="script_course.js"></script>
+</body>
+</html>
